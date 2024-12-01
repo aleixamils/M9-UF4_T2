@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>UF2 T4</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="insercio_basica.html">P1 - Inserció Bàsica</a></li>
+            <li><a href="fromats_imatge_atributs.html">P2 - Formats imatge</a></li>
+            <li><a href="imatges_responsives.html">P3 - Imatges Responsives</a></li>
+            <li><a href="direccio_art.html">P4 - Direcció Art</a></li>
+            <li><a href="galeria_lightbox.html">P5 - Galeria LightBox</a></li>
+            <li><a href="mapa_interactiu.html">P6 - Mapa Interactiu</a></li>
+            <li><a href="lazy_loading.html">P7 - Lazy Loading</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Pràctica 6: Mapa interactiu amb <span class="accent">&lt;map&gt;</span></h1>
+    <ol>
+        <li>Crea un fitxer HTML anomenat <span class="accent">mapa_interactiu.html</span>.</li>
+        <li>Fes una ullada al següent recurs: <a href="https://www.w3schools.com/html/html_images_imagemap.asp">W3Schools.com</a></li>
+        <li>Escull una imatge (com un mapa o diagrama) i crea zones clicables utilitzant <span class="accent">&lt;map&gt;</span> i <span class="accent">&lt;area&gt;</span>.</li>
+        <li>
+            Defineix:
+            <ul>
+                <li>Les coordenades amb <span class="accent">coords</span></li>
+                <li>La forma de les zones (ex.: <span class="accent">rect</span>, <span class="accent">circle</span>, <span class="accent">poly</span>).</li>
+                <li>Els enllaços amb <span class="accent">href</span>.</li>
+            </ul>
+        </li>
+
+    </ol>
+
+
+    <section class="images">
+        <img src="hogwarts_map.jpg" usemap="#hogwartsMap" alt="Mapa de Hogwarts">
+
+        <map name="hogwartsMap">
+            <!-- Gran Sala -->
+            <area shape="rect" coords="180,220,250,290" href="https://example.com/gran-sala" alt="Gran Sala">
+
+            <!-- Torre de Gryffindor -->
+            <area shape="circle" coords="350,150,40" href="https://example.com/torre-gryffindor" alt="Torre de Gryffindor">
+
+            <!-- Llac -->
+            <area shape="poly" coords="50,400,100,450,150,410,90,350" href="https://example.com/llac" alt="Llac">
+        </map>
+    </section>
+
+
+
+</main>
+</body>
+</html>

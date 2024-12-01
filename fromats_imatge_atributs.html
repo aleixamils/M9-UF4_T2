@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>UF2 T4</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="insercio_basica.html">P1 - Inserció Bàsica</a></li>
+            <li><a href="fromats_imatge_atributs.html">P2 - Formats imatge</a></li>
+            <li><a href="imatges_responsives.html">P3 - Imatges Responsives</a></li>
+            <li><a href="direccio_art.html">P4 - Direcció Art</a></li>
+            <li><a href="galeria_lightbox.html">P5 - Galeria LightBox</a></li>
+            <li><a href="mapa_interactiu.html">P6 - Mapa Interactiu</a></li>
+            <li><a href="lazy_loading.html">P7 - Lazy Loading</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Pràctica 2: Formats d'imatge i atributs</h1>
+    <ol>
+        <li>Amplia el fitxer <span class="accent">insercio_basica.html</span>.</li>
+        <li>Cerca dues imatges en formats moderns com WebP o AVIF.</li>
+        <li>
+            Afegeix-les a la pàgina amb l'etiqueta <span class="accent">&lt;img&gt;</span> i configura:
+            <ul>
+                <li>Els atributs <span class="accent">width</span> i <span class="accent">height</span> per controlar la mida visual de la imatge.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <section class="codi">
+        <p>Exemple de codi:</p>
+        <pre>
+            <code class="html">
+                &lt;img src="imatge-modern.webp" alt="Imatge optimitzada amb WebP" width="400" height="300"&gt;
+                &lt;img src="imatge-modern.avif" alt="Imatge optimitzada amb AVIF" width="400" height="300"&gt;
+            </code>
+        </pre>
+    </section>
+
+    <section class="imatge">
+        <img src="/venecia.webp" alt="Imatge optimitzada amb WebP" width="400" height="300">
+        <img src="/venecia.avif" alt="Imatge optimitzada amb AVIF" width="400" height="300">
+    </section>
+
+    <section class="reflexio">
+        <div class="pregunta">
+            <ul>
+                <li>Quina diferència hi ha entre la mida real de la imatge i els atributs <span
+                        class="accent">width</span> i <span class="accent">height</span></li>
+            </ul>
+        </div>
+
+        <div class="resposta">
+            <p>
+                La mida real de la imatge correspon a les dimensions originals d'aquesta, tal com s'ha creat o exportat des d'una eina d'edició d'imatges. En canvi, els atributs `width` i `height` defineixen com es mostra visualment la imatge a la pàgina web, permetent ajustar les dimensions sense modificar l'arxiu original.
+            </p>
+            <p>
+                Quan les dimensions especificades amb `width` i `height` no són proporcionals a la mida real de la imatge, aquesta pot aparèixer distorsionada. És important mantenir les proporcions originals de la imatge per evitar deformacions i assegurar una experiència visual adequada.
+            </p>
+            <p>
+                També cal tenir en compte que, tot i reduir les dimensions visuals amb aquests atributs, la mida del fitxer de la imatge no canvia, per la qual cosa l'impacte en el temps de càrrega serà el mateix. Si optimitzar el rendiment, caldria usar eines per redimensionar o comprimir la imatge original.
+            </p>
+        </div>
+    </section>
+</main>
+</body>
+</html>

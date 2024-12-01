@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>UF2 T4</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="insercio_basica.html">P1 - Inserció Bàsica</a></li>
+            <li><a href="fromats_imatge_atributs.html">P2 - Formats imatge</a></li>
+            <li><a href="imatges_responsives.html">P3 - Imatges Responsives</a></li>
+            <li><a href="direccio_art.html">P4 - Direcció Art</a></li>
+            <li><a href="galeria_lightbox.html">P5 - Galeria LightBox</a></li>
+            <li><a href="mapa_interactiu.html">P6 - Mapa Interactiu</a></li>
+            <li><a href="lazy_loading.html">P7 - Lazy Loading</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Pràctica 3: Imatges responsives amb <span class="accent">srcset</span></h1>
+    <ol>
+        <li>Crea un fitxer HTML anomenat <span class="accent">imatges_responsives.html</span>.</li>
+        <li>
+            Insereix una imatge utilitzant l'element <span class="accent">&lt;img&gt;</span> amb els atributs:
+            <ul>
+                <li><span class="accent">srcset</span> per definir múltiples fonts d'imatge amb resolucions diferents.</li>
+                <li><span class="accent">sizes</span> per especificar la mida en funció de la mida de la pantalla.</li>
+            </ul>
+        </li>
+        <li>Prova la pàgina al navegador amb diferents amplades de finestra i boserva quina imatge es carrega a través de les eines per desenvolupadors. <strong><u>Afegeix també una captura</u></strong> on es vegi que es segueix la lòbica que has definit.</li>
+    </ol>
+
+
+    <section class="images">
+        <img
+                srcset="
+                    /venecia-600_400_petit.webp 400w,
+                    /venecia-1200_800_mitj.webp 800w,
+                    /venecia-2400_1600_gran.webp 1600w"
+                sizes="
+                   (max-width: 600px) 100vw,
+                    (min-width: 601px) and (max-width: 1200px) 90vw,
+                    (min-width: 1201px) 33vw"
+                src="/venecia-2400_1600_gran.webp"
+                alt="Imatge de venecia responsiva"
+        >
+    </section>
+    
+    <section class="reflexio">
+        <img src="/ezgif.com-video-to-gif-converter.gif" alt="">
+    </section>
+
+
+</main>
+</body>
+</html>

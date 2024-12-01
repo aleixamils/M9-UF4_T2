@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin: 20px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+  background-color: #007BFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  margin-bottom: 20px;
+}
+
+.images img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+}
+
+.accent {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Reflexió Section */
+.reflexio {
+  background-color: #f0f8ff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #007BFF;
+}
+
+.reflexio .pregunta ul {
+  color: #444;
+  font-style: italic;
+}
+
+.reflexio .resposta {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Maps */
+.images img[usemap] {
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+}
+
+map area {
+  cursor: pointer;
+}
+
+/* Code Blocks */
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #d63384;
+}
+
+/* Lazy Loading */
+.images img[loading="lazy"] {
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+
+.images img[loading="lazy"]:hover {
+  opacity: 1;
+}

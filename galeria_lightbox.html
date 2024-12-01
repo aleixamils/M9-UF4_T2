@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>UF2 T4</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="insercio_basica.html">P1 - Inserció Bàsica</a></li>
+            <li><a href="fromats_imatge_atributs.html">P2 - Formats imatge</a></li>
+            <li><a href="imatges_responsives.html">P3 - Imatges Responsives</a></li>
+            <li><a href="direccio_art.html">P4 - Direcció Art</a></li>
+            <li><a href="galeria_lightbox.html">P5 - Galeria LightBox</a></li>
+            <li><a href="mapa_interactiu.html">P6 - Mapa Interactiu</a></li>
+            <li><a href="lazy_loading.html">P7 - Lazy Loading</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Pràctica 5: Galeria amb efecte Lightbox</h1>
+    <ol>
+        <li>Crea un fitxer HTML anomenat <span class="accent">galeria_lightbox.html</span>.</li>
+        <li>Organitza diverses imatges com una galeria utilitzant CSS Grid o Flexbox.</li>
+        <li>Cerca una llibreria de lightbox (ex: <a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a> o una altra de la teva elecció, investiga!) i implementa-la perquè les imatges s'obrin en un lightbox quan es cliquin.</li>
+    </ol>
+º
+
+    <section class="gallery">
+        <a href="/cotxeNeu_88.webp" data-lightbox="img-1" data-title="Cotxe a la neu" data-alt="Cotxe a la neu">
+            <img src="/cotxeNeu_88.webp" >
+        </a>
+        <a href="/venecia-1200_800_mitj.webp" data-lightbox="img-1" data-title="Venecia" data-alt="Cotxe a la neu">
+            <img src="/venecia-1200_800_mitj.webp" >
+        </a>
+        <a href="/gatNegre_81.webp" data-lightbox="img-1" data-title="Gat negre" data-alt="Get negre">
+            <img src="/gatNegre_81.webp" >
+        </a>
+        <a href="/paisatgeSenzill_Original.webp" data-lightbox="img-1" data-title="Paisatge" data-alt="Paisatge">
+            <img src="/paisatgeSenzill_Original.webp" >
+        </a>
+        <a href="/muntanya_90.webp" data-lightbox="img-1" data-title="Cotxe a la neu" data-alt="Cotxe a la neu">
+            <img src="/muntanya_90.webp" >
+        </a>
+        <a href="/paraiguesJaponesos.webp" data-lightbox="img-1" data-title="Cotxe a la neu" data-alt="Cotxe a la neu">
+            <img src="/paraiguesJaponesos.webp" >
+        </a>
+    </section>
+
+
+</main>
+
+<script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>UF2 T4</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="insercio_basica.html">P1 - Inserció Bàsica</a></li>
+            <li><a href="fromats_imatge_atributs.html">P2 - Formats imatge</a></li>
+            <li><a href="imatges_responsives.html">P3 - Imatges Responsives</a></li>
+            <li><a href="direccio_art.html">P4 - Direcció Art</a></li>
+            <li><a href="galeria_lightbox.html">P5 - Galeria LightBox</a></li>
+            <li><a href="mapa_interactiu.html">P6 - Mapa Interactiu</a></li>
+            <li><a href="lazy_loading.html">P7 - Lazy Loading</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Pràctica 4: Direcció d'art amb <span class="accent">&lt;picture&gt;</span></h1>
+    <ol>
+        <li>Amplia el fitxer <span class="accent">imatges_responsives.html</span>.</li>
+        <li>Utilitza l'element <span class="accent">&lt;picture&gt;</span> per mostrar diferents imatges en funció de la mida de la pantalla.</li>
+        <li>
+            Configura:
+            <ul>
+                <li>Un <span class="accent">&lt;source&gt;</span> per a dispositius petits amb una imatge optimitzada per mòbils.</li>
+                <li>Un altre <span class="accent">&lt;source&gt;</span> per a dispositius grans amb una imatge d'alta resolució.</li>
+                <li>Un element <span class="accent">&lt;img&gt;</span> de reserva.</li>
+            </ul>
+        </li>
+        <li>Prova la pàgina al navegador amb diferents amplades de finestra i boserva quina imatge es carrega a través de les eines per desenvolupadors. <strong><u>Afegeix també una captura</u></strong> on es vegi que es segueix la lòbica que has definit.</li>
+    </ol>
+
+
+    <section class="images">
+        <picture>
+            <source
+                    srcset="/venecia-2400_1600_gran.webp"
+                    media="(min-width: 1200px)"
+                    type="image/webp">
+
+            <source
+                srcset="/venecia-1200_800_mitj.webp"
+                media="(min-width: 600px)"
+                type="image/webp">
+
+            <img src="/venecia-600_400_petit.webp" alt="Imatge de Venecia Optimitzada">
+        </picture>
+    </section>
+
+    <section class="reflexio">
+        <div class="pregunta">
+            <ul>
+                <li>Quina avantage té utilitzar <span class="accent">&lt;picture&gt;</span> per a direcció d'art en comparació amb srcset?</li>
+            </ul>
+        </div>
+
+        <div class="resposta">
+            <p>
+                L’element picture permet definir condicions més flexibles amb diferents formats i continguts per a cada mida de pantalla, mentre que srcset només optimitza resolucions d’una mateixa imatge.
+            </p>
+        </div>
+    </section>
+
+
+</main>
+</body>
+</html>
